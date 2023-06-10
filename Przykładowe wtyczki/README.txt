@@ -1,1 +1,0 @@
-Pliki z tego folderu należy przerzucić do folderu "plugins" w folderze programu w katalogu użytkownika ([katalog użytkownika]/SzybkiStart/plugins) po pierwszym uruchomieniu programu
