@@ -1,4 +1,4 @@
-#krótki plugin dający użytkownikowi losowy artykuł z Wikipedii
+# an example plugin
 
 import tkinter as tk
 import requests
@@ -8,9 +8,9 @@ class PluginWindow:
     def __init__(self, root):
         self.root = root
         self.article_title, self.article_url = self.get_random_wikipedia_article()
-        self.button = tk.Button(root, text=f"Do przeczytania na dziś: {self.article_title}", command=self.open_article)
+        self.button = tk.Button(root, text=f"Read today: {self.article_title}", command=self.open_article)
 
-    # zrzucamy dane losowego artykułu do pliku .json i zczytujemy odpowiednie dane
+    # json stuff
     def get_random_wikipedia_article(self):
         S = requests.Session()
         URL = "https://pl.wikipedia.org/w/api.php"
